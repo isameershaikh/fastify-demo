@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 fastify.get('/', async () => {
   return {
-    message: process.env.APP_MESSAGE || 'Hello from Fastify!',
+    message: process.env.APP_MESSAGE || 'Hello from Fastify!, this app is created by sameer',
     application: 'Fastify Demo',
     environment: process.env.NODE_ENV || 'development'
   };
